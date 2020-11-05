@@ -5,7 +5,7 @@
 4- Visuales --> box-shadow, border-radius, gradient, etc
 5- Otros --> reglas CSS y más.
 */
- :root{
+:root{
      /*colors*/
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
@@ -17,17 +17,17 @@
     --off-white: #faf8f7;
     --just-white: #fff;
     --black: #201e1c;
- }
- * {
+}
+* {
      box-sizing: border-box;
      margin:0;
      padding: 0; 
- }
- html {
-     font-size:62.5%;
-     font-family: 'DM Sans', sans-serif;
- }
- header {
+}
+html {
+        font-size: 62.5%;
+     font-family: "DM Sans", sans-serif;
+}
+header {
      position: relative;
      display: flex;
      flex-direction: column;
@@ -37,38 +37,39 @@
      height: 334px;
      text-align: center;
      background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
- }
- header img {
-    width: 150px;
+
+}
+header img {
+    width: 151px;
     height: 24px;
     margin-top: 60px;
     align-self: center;
- }
- .header--title-container {
+}
+.header--title-container {
      width: 90%;
      min-width: 288px;
      max-width: 900px;
      height: 218px;
-     margin-top: 40px;
+     margin-top: 50px;
      text-align: center;
      align-self: center;
- }
- .header--title-container h1 {
+}
+.header--title-container h1 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6 rem;
     color: var(--just-white);
- }
- .header--title-container p {
+}
+.header--title-container p {
      margin-top: 25px;
      font-size: 1.4rem;
      font-weight: 500;
      line-height: 1.8rem;
      color: var(--soft-orange);
- }
+}
 .header--title-container .header--button {
     position: absolute; 
-    left: calc(50% - 114.5px);
+    left: calc(50% - 118px);
     top: 270px;
     display: block;
     margin-top: 35px;
@@ -79,18 +80,21 @@
     /* sombras*/
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
 }
-.header--button span {
+.header--title-container .header--button span {
     display: inline-block;
     width: 13px;
     height: 8px;
     margin-left: 10px;
     background-image: url('./assets/icons/down-arrow.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 main {
     width: 100%;
@@ -244,7 +248,7 @@ main-exchange-comntainer h2 {
 .currency-table--date p,
 .commissions-table--date p {
     margin: 7px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5px;
 }
 .main-product-detail {
@@ -257,8 +261,8 @@ main-exchange-comntainer h2 {
 }
 .product-detail--batata-logo {
     position: absolute;
-    width: 40px;
-    height: 25px;
+    width: 40.5px;
+    height: 24px;
     top:-10px;
     left: calc(50% - 20px);
     background-image: url("./assets/icons/Group\ 16.svg");
@@ -278,7 +282,7 @@ main-exchange-comntainer h2 {
     line-height: 2.6rem;
     color: var(--just-white);
 }
-.product-detail---title p {
+.product-detail--title p {
     margin-bottom: 20px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -294,7 +298,7 @@ main-exchange-comntainer h2 {
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     border-radius: 4px;
 }
 .product-detail--card .clock {
@@ -377,19 +381,19 @@ main-exchange-comntainer h2 {
     padding-bottom: 70px;
     text-align: center;
 }
-.plans--title {
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-}
 .plans--title h2 {
     padding-top: 50px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--black);
+}
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 .plans--title p {
     padding-top: 30px;
@@ -410,20 +414,21 @@ main-exchange-comntainer h2 {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
-    min-width: 290px;
+    min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 5px 0;
-    padding: 0 15px;
+    margin: 50px 30px 0;
+    padding: 0px 15px;
     background-color: var(--just-white);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
-.recommended {
+.plans-container--card .recommended {
     position: absolute;
     width: 120px;
     height: 31px;
     padding: 6px;
+    margin: 0;
     top: -15px;
     left: calc(50% - 60px);
     background-color: var(--bitcoin-orange);
@@ -433,27 +438,28 @@ main-exchange-comntainer h2 {
 .plan-card--title {
     padding-top: 30px;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8rem;
     color: black;
 }
-.plan-card--price {
+.plans-container--card .plan-card--price {
     padding: 5px 0;
     font-size: 5.3rem;
     font-weight: bold;
-    line-height: 5.3rem;
+    line-height: 6.3rem;
     color: black;
 }
 .plan-card--price span {
     font-size: 1.2rem;
     font-weight: 300; 
 }
-.plan-card--saving {
+.plans-container--card .plan-card--saving {
     font-size: 1.2rem;
+    padding-top: 0;
     color: #757575;
 }
 .plan-card--ca {
-    width: 150px;
+    width: 151px;
     height: 48px;
     margin-top: 20px;
     background-color: #faf8f7;
@@ -463,6 +469,13 @@ main-exchange-comntainer h2 {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+}
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/arrow-right\ 1.svg");
+    vertical-align: text-bottom;
 }
 footer {
     display: flex;
