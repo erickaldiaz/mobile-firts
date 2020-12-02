@@ -404,7 +404,7 @@ main-exchange-comntainer h2 {
 }
 .plans-container--slider {
     display: flex;
-    height: 316px;
+    height: 320px;
     /* */
     overflow-x: scroll;
     overscroll-behavior-x: contain;
@@ -434,6 +434,7 @@ main-exchange-comntainer h2 {
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
     color: var(--just-white);
+    font-size: 1.4rem;
 }
 .plan-card--title {
     padding-top: 30px;
@@ -454,7 +455,7 @@ main-exchange-comntainer h2 {
     font-weight: 300; 
 }
 .plans-container--card .plan-card--saving {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-top: 0;
     color: #757575;
 }
